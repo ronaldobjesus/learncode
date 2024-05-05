@@ -1,0 +1,39 @@
+{
+  "name": "zanisk-dev-tools",
+  "version": "1.0.0",
+  "description": "Tools to developer themes",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --progress --mode production",
+    "watch": "webpack --progress --watch --mode production",
+    "scss-lint": "stylelint \"**/*.scss\" ./css --formatter verbose",
+    "scss-fix": "stylelint \"**/*.scss\" ./css --fix",
+    "lint": "eslint -c .eslintrc.json --ext .js, ./js",
+    "lint-fix": " eslint -c .eslintrc.js --ext .js, ./js --fix"
+  },
+  "author": "Zanisk",
+  "license": "GPL-3.0-or-later",
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "bootstrap": "5.3.0-alpha1",
+    "css-loader": "^6.7.3",
+    "esbuild-loader": "^2.21.0",
+    "eslint": "^8.34.0",
+    "eslint-import-resolver-webpack": "^0.13.2",
+    "eslint-plugin-import": "^2.27.5",
+    "mini-css-extract-plugin": "^2.7.2",
+    "node-sass": "^8.0.0",
+    "sass": "^1.57.1",
+    "sass-loader": "^13.2.0",
+    "style-loader": "^3.3.1",
+    "stylelint": "^15.1.0",
+    "stylelint-config-standard-scss": "^7.0.0",
+    "terser-webpack-plugin": "^5.3.6",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  },
+  "dependencies": {
+    "bootstrap-icons": "^1.10.3",
+    "eslint-config-standard": "^17.0.0"
+  }
+}
